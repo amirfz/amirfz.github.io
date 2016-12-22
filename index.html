@@ -1,1 +1,182 @@
-hello world
+<!DOCTYPE html5>
+<html lang="en">
+	<head>
+		<title>Amir Feizpour | Homepage</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta name="author" content="Amir Feizpour" />
+		<!-- add styles -->
+		<!--<link href="styles_1.css" rel="stylesheet" type="text/css" />-->
+	
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	</head>
+
+	<body>
+
+		<div class="container-fluid" style="margin-bottom: 70px">
+			 			 
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="index.html">Amir Feizpour</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+							<li><a href="research.html">RESEARCH</a></li>
+							<li class="dropdown">
+								<a href="publications.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PUBLICATIONS <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="publications.html#journals">Journal articles</a></li>
+									<li><a href="publications.html#Recent_Conferences">Recent Conferences</a></li>
+									<li><a href="publications.html#oldies">Old Stuff</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="myDataSci.html">DATA PLAYGROUND</a></li> 
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="links.html"><span class="glyphicon glyphicon-link"></span> USEFUL LINKS</a></li>
+						</ul>
+					</div>
+  				</div>
+			</nav>
+		</div>
+		
+		<div class="container-fluid" style="margin-bottom: 50px">		
+			
+			<div class="col-lg-6 col-sm-12">
+				<h1>YouTube comment troll detection</h1>
+				Using natural langauge processing and text analysis techniques on a labelled set of data to train a model to identify the comments that are troll.
+				<p><a href="http://nbviewer.jupyter.org/github/amirfz/youtube_troll_detection/blob/master/insult_detection.ipynb" target="_blank">Jupyter Notebook...</a></p>
+				<div class="media">
+					<div class="media-left">
+						<img class="img-responsive" alt="war" src="img/wordCloud.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<h1>Word Trends using Google NGrams</h1>
+				We are using wordnet to generate a word cloud around chosen words and then use google ngrams to map out the usage frequency of the concept. We are eventually interested to see if the frequency is correlated with any important historical events.
+				<p><a href="http://nbviewer.jupyter.org/github/amirfz/myPythonProjects/blob/master/googleNGram/googleNGram.ipynb" target="_blank">Jupyter Notebook...</a></p>
+				<div class="media">
+					<div class="media-left">
+						<img class="img-responsive" alt="war" src="img/dataset_for_war_wordCloud.png">
+						<img class="img-responsive" alt="gender" src="img/dataset_for_gender_wordCloud.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<h1>US primary election 2016</h1>
+				Playing with the US primary election 2016 data from Kaggle.com. 
+				The idea of this notebook is to visualise the US primary election data and based on the insight use a model to predict the result of the election in future counties
+				<p><a href="http://nbviewer.jupyter.org/github/amirfz/myPythonProjects/blob/master/US_primary_election_2016/US_primary_elections_2016.ipynb" target="_blank">Jupyter Notebook...</a></p>
+				<div class="media">
+					<div class="media-left">
+						<img class="img-responsive" alt="vote_for_turnout_vs_white" src="img/vote_for_turnout_vs_white.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<h1>Coffee donors in our lab</h1>
+				My first attempt at learning Pandas.
+				I used the 'data' we collected on a sign up sheet for coffee donors in the lab to look for patterns in coffee buying behavior of my group members 
+				<p><a href="http://nbviewer.jupyter.org/github/amirfz/myPythonProjects/blob/master/coffeeDonors/coffeeDonors.ipynb" target="_blank">Jupyter Notebook...</a></p>
+				<div class="media">
+					<div class="media-left">
+						<img class="img-responsive" alt="coffee bought vs month" src="img/vsMonths.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<h1>Memory analysis GUI </h1>
+				A GUI I wrote using PyQt4 for analysing memory efficiency data in our lab. 
+				It takes two traces of data (input and output from the memory) and calculates the efficiency using intervals that are chosen on the interface by the user or autoset using some inputs from the user
+				<p><a href="https://github.com/amirfz/myPythonProjects/blob/master/memoryDataAnalysisGUI/memoryDataAnalysis_GUI_02.py" target="_blank">Git Repo...</a></p>
+				<div class="media">
+					<div class="media-left">
+						<img class="img-responsive" alt="memory GUI" src="img/memoryGUI.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<h1>Numerical simulation of the Maxwell-Bloch equations</h1>
+				<p>This is a software package that I developed during my PhD to simulate my experiment. 
+				I've been translating this code to python during my postdoc as part of my general migration from MATLAB to python.
+				I have been using this package to simulate a new quantum memory idea we are toying with.
+				I used an earlier version of this (in MATLAB) to produce theoretical results for 
+				<a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.013834" target="_blank">
+				Short-pulse cross-phase modulation...</a> and experimental results for 
+				<a href="http://arxiv.org/abs/1506.07051v1" target="_blank">Observation of EIT-enhanced...</a> and
+				<a href="http://www.nature.com/doifinder/10.1038/nphys3433" target="_blank">
+				Observation of the Nonlinear...</a>.</p>
+				<div class="media">
+					<div class="media-left">
+						<img class="img-responsive" alt="memory operation" src="img/xps_vs_window.png">
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<footer class="footer">
+			<div class="footer navbar-fixed-bottom text-center" style="background: white; margin-top:15px">
+				<p class="text-muted">Last updated: 
+					<SCRIPT LANGUAGE="JavaScript">
+						var months = new Array(13);
+						months[1] = "January";
+						months[2] = "February";
+						months[3] = "March";
+						months[4] = "April";
+						months[5] = "May";
+						months[6] = "June";
+						months[7] = "July";
+						months[8] = "August";
+						months[9] = "September";
+						months[10] = "October";
+						months[11] = "November";
+						months[12] = "December";
+						var dateObj = new Date(document.lastModified)
+						var lmonth = months[dateObj.getMonth() + 1]
+						var fyear = 1900+dateObj.getYear()
+						document.write(" " + lmonth + " " + fyear)
+					</SCRIPT>
+					<a href="http://scholar.google.ca/citations?user=Df2PgP4AAAAJ&amp;hl=en" target="_blank"><img height=20 alt="scholars" src="img/Google_Scholar_logo_2015.png"></a>
+					<a href="https://ca.linkedin.com/in/amirfz" target="_blank"><img height=20 alt="linkedin" src="img/in_logo.png"></a>
+					<a href="https://github.com/amirfz" target="_blank"><img height=20 alt="kaggle" src="img/github_logo.png"></a>
+					<a href="https://www.kaggle.com/amirfz" target="_blank"><img height=20 alt="kaggle" src="img/kaggle_logo.png"></a>
+				</p>
+			</div>
+		</footer>
+								
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-63855940-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		
+	</body>
+
+</html>
